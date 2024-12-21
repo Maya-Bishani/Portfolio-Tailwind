@@ -1,0 +1,27 @@
+textarea , input{
+    width: 530px;   
+}
+input::placeholder ,textarea::placeholder {
+    color:#2D2D2D;
+    
+}
+
+
+@media(max-width:998px){
+    .container-contact{
+    flex-wrap: wrap;
+
+    }
+}
+@media(max-width:610px){
+    textarea , input{
+        width: 400px;
+        
+    }
+}
+@media(max-width:462px){
+    textarea , input{
+        width: 300px;
+        
+    }
+}
