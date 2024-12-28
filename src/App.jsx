@@ -3,6 +3,11 @@ import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import HomePage from './Pages/HomePage/HomePage'
 import './App.css'
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
+import 'animate.css';
+
+AOS.init();
 
 function App() {
   
@@ -12,6 +17,7 @@ function App() {
      <HomePage/>
     <Contact/>
      <Footer/>
+    
     </>
   )
 }

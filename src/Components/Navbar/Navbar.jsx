@@ -9,10 +9,10 @@ export default function Navbar(){
     <div className="fixed z-10 w-full bg-white py-7 right-0 left-0 ">
                 <div className="container mx-auto flex justify-between items-center">
                     <div>
-                        <p className='Fleur text-4xl font-normal'>Portfolio</p>
+                        <p className='Fleur text-4xl font-normal '>Portfolio</p>
                     </div>
                     <div className='hidden md:flex space-x-8'>
-                        <a href='#About' className='font-normal border-b-4 border-transparent hover:border-[#009379] hover:text-[#009379]'>About</a>
+                        <a href='#About' className='font-normal border-b-4 border-transparent hover:border-[#009379] hover:text-[#009379] '>About</a>
                         <a href='#Work' className='font-normal border-b-4 border-transparent hover:border-[#009379] hover:text-[#009379]'>Work</a>
                         <a href='#Contact' className='font-normal border-b-4 border-transparent hover:border-[#009379] hover:text-[#009379]'>Contact</a>
                     </div>

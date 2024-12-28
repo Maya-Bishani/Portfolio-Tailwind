@@ -1,3 +1,6 @@
+import React from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 const cardWork = [
     {
       imgSrc: "./Images/Image.svg",
@@ -35,12 +38,20 @@ const cardWork = [
     }
   ];
 export default function Work(){
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000, // مدة الأنيميشن
+      once: false, // إذا كنت تريد أن يتكرر الأنيميشن عند التمرير لأعلى/أسفل
+    });
+  }, []);
     return<>
     <div id="Work" className="mb-16 pt-5">
-        <p className="font-semibold text-4xl text-center mb-14 heading">My latest work</p>
+        <p className="font-semibold text-4xl text-center mb-14 heading animate__animated" data-aos="zoom-in">My latest work</p>
         <div className="flex flex-col items-center gap-8  mb-14 md:justify-between md:gap-0 md:flex-row">
         {cardWork.map((cardWork, index) => (
-                <div className="flex flex-col hover:scale-105 transition" key={index}>
+                <div className="flex flex-col hover:scale-105 transition " data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" key={index}>
                     <img className="w-72  mb-6" src={cardWork.imgSrc} alt="photo" />
                     <p className="  font-semibold text-2xl mb-3 ">{cardWork.title}</p>
                     <p className=" font-normal text-xl">{cardWork.text}</p>
@@ -50,7 +61,9 @@ export default function Work(){
 
         <div className="flex flex-col items-center  gap-8 mb-14 md:justify-between  md:flex-row md:gap-0">
         {cardWork2.map((cardWork2, index) => (
-                <div className="flex flex-col hover:scale-105 transition " key={index}>
+                <div className="flex flex-col hover:scale-105 transition " data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"  key={index}>
                     <img className="w-72  mb-6 " src={cardWork2.imgSrc} alt="photo" />
                     <p className="  font-semibold text-2xl mb-3">{cardWork2.title}</p>
                     <p className=" font-normal text-xl">{cardWork2.text}</p>

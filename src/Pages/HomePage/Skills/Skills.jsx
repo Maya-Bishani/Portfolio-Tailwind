@@ -1,3 +1,8 @@
+import React from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import './Skills.css'
+
 const cardDataSkills = [
     {
       imgSrc: "./Images/Imageplaceholder1.svg",
@@ -16,13 +21,21 @@ const cardDataSkills = [
     }
   ];
 export default function Skills(){
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000, // مدة الأنيميشن
+      once: false, // إذا كنت تريد أن يتكرر الأنيميشن عند التمرير لأعلى/أسفل
+    });
+  }, []);
     return<>
     <div className="pt-16">
-    <h1 className="text-center font-semibold text-4xl mb-14 heading  ">My skills</h1>
+    <h1 className="text-center font-semibold text-4xl mb-14 heading  " data-aos="zoom-in" >My skills</h1>
   
     <div className="flex flex-col  gap-8 mb-16 md:justify-between md:flex-row  ">
             {cardDataSkills.map((cardDataSkills, index) => (
-                <div className="flex flex-col" key={index}>
+                <div className="flex flex-col " data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"  key={index}>
                     <img className="w-32 mx-auto mb-14" src={cardDataSkills.imgSrc} alt="photo" />
                     <p className="text-center mb-5 font-semibold text-2xl ">{cardDataSkills.title}</p>
                     <p className="text-center font-normal text-2xl">{cardDataSkills.text}</p>
