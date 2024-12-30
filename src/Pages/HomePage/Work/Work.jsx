@@ -1,5 +1,4 @@
 import React from 'react';
-import 'aos/dist/aos.css';
 import AOS from 'aos';
 const cardWork = [
     {
@@ -40,8 +39,8 @@ const cardWork = [
 export default function Work(){
   React.useEffect(() => {
     AOS.init({
-      duration: 1000, // مدة الأنيميشن
-      once: false, // إذا كنت تريد أن يتكرر الأنيميشن عند التمرير لأعلى/أسفل
+      duration: 1000, 
+      once: false,
     });
   }, []);
     return<>

@@ -1,6 +1,5 @@
 import './Contact.css'
 import React from 'react';
-import 'aos/dist/aos.css';
 import AOS from 'aos';
 export default function Contact (){
   React.useEffect(() => {

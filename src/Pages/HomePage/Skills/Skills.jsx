@@ -1,5 +1,4 @@
 import React from 'react';
-import 'aos/dist/aos.css';
 import AOS from 'aos';
 import './Skills.css'
 
@@ -23,8 +22,8 @@ const cardDataSkills = [
 export default function Skills(){
   React.useEffect(() => {
     AOS.init({
-      duration: 1000, // مدة الأنيميشن
-      once: false, // إذا كنت تريد أن يتكرر الأنيميشن عند التمرير لأعلى/أسفل
+      duration: 1000, 
+      once: false,
     });
   }, []);
     return<>
