@@ -16,17 +16,14 @@ export default function Contact (){
                  data-aos-duration="1000" data-aos-delay="500">Let’s work together</p>
         <p className="font-normal text-2xl mt-10 mb-14 " data-aos="fade-up"
      data-aos-duration="3000">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-        <div className='flex  pl-0 mb-8 '>
-            <img className='' data-aos="fade-up"
-     data-aos-duration="3000" src='./Images/Footer-img/Vector1.svg' alt='icon'/>
-            <img className='' data-aos="fade-up"
-     data-aos-duration="3000" src='./Images/Footer-img/facebook.svg 'alt='facebook-icon'/>
-            <img className=''  data-aos="fade-up"
-     data-aos-duration="3000"src='./Images/Footer-img/Vector2.svg' alt='icon'/>
-            <img className='' data-aos="fade-up"
-     data-aos-duration="3000" src='./Images/Footer-img/Vector3.svg' alt='icon' />
-            <img className='' data-aos="fade-up"
-     data-aos-duration="3000" src='./Images/Footer-img/Vector4.svg' alt='icon'/>
+        <div className='flex  pl-0 mb-8 ' data-aos="fade-up"
+     data-aos-duration="3000" >
+           <a href='#'> <img className='transition-transform duration-300 hover:translate-y-[-5px] ' src='./Images/Footer-img/Vector1.svg'  alt='icon'/></a>
+           <a href='#'>   <img className='transition-transform duration-300 hover:translate-y-[-5px]'  src='./Images/Footer-img/facebook.svg 'alt='facebook-icon'/></a>
+           <a href='#'>  <img className='transition-transform duration-300 hover:translate-y-[-5px]'  src='./Images/Footer-img/Vector2.svg' alt='icon'/></a>
+           <a href='#'>  <img className='transition-transform duration-300 hover:translate-y-[-5px]'  src='./Images/Footer-img/Vector3.svg' alt='icon' /></a>
+            <a href='#'>  <img className='transition-transform duration-300 hover:translate-y-[-5px]'  src='./Images/Footer-img/Vector4.svg' alt='icon'/></a>
+            
         </div>
        
       </div>
